@@ -54,7 +54,7 @@
                                        "when": "textInputFocus" },
 
 // multi-cursor
-{ "key": "ctrl+backspace",          "command": "editor.action.moveSelectionToPreviousFindMatch",
+{ "key": "ctrl+k ctrl+backspace",   "command": "editor.action.moveSelectionToPreviousFindMatch",
                                        "when": "editorFocus && editorHasMultipleSelections" },
 { "key": "ctrl+k ctrl+d",           "command": "editor.action.moveSelectionToNextFindMatch",
                                        "when": "editorFocus && editorHasMultipleSelections" },
