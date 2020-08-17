@@ -108,10 +108,11 @@
 // intellisense
 { "key": "ctrl+r",                  "command": "workbench.action.gotoSymbol" },
 { "key": "ctrl+shift+r",            "command": "workbench.action.showAllSymbols" },
+{ "key": "ctrl+k ctrl+i",           "command": "namespaceResolver.import" },
 { "key": "ctrl+k ctrl+enter",       "command": "editor.action.goToDeclaration",
                                        "when": "editorTextFocus" },
 
-// jest
-{ "key": "ctrl+k ctrl+r",           "command": "better-jest.run" },
-{ "key": "ctrl+k ctrl+f",           "command": "better-jest.run-file" }
+// better phpunit
+{ "key": "ctrl+k ctrl+r",           "command": "better-phpunit.run" },
+{ "key": "ctrl+k ctrl+f",           "command": "better-phpunit.run-file" }
 ]

@@ -26,23 +26,20 @@
             "}"
         ]
     },
-    "Test Boilerplate": {
+    "Test Method": {
         "prefix": "test",
         "body": [
-            "namespace Tests\\Feature;",
-            "",
-            "use Tests\\TestCase;",
-            "use Illuminate\\Foundation\\Testing\\DatabaseMigrations;",
-            "",
-            "class ${1:Test} extends TestCase",
+            "/** @test */",
+            "public function it_$1()",
             "{",
-            "\tuse DatabaseMigrations;",
-            "",
-            "\tfunction it_${2:does_something}()",
-            "\t{",
-            "\t\t$0",
-            "\t}",
+            "\t$0",
             "}"
+        ]
+    },
+    "Tinker": {
+        "prefix": "tinker",
+        "body": [
+            "eval(\\Psy\\sh());"
         ]
     }
 }

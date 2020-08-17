@@ -1,3 +1,4 @@
+// Place your settings in this file to overwrite the default settings
 {
     // better defaults
     "diffEditor.ignoreTrimWhitespace": false,
@@ -17,9 +18,6 @@
     "window.nativeFullScreen": false,
     "window.nativeTabs": true,
     "workbench.editor.enablePreview": false,
-    "[html]": {
-        "editor.tabSize": 2
-    },
     "[javascript]": {
         "editor.tabSize": 2
     },
@@ -29,6 +27,7 @@
     "[vue-html]": {
         "editor.tabSize": 2
     },
+
     // hide everything
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
@@ -37,6 +36,7 @@
     "workbench.editor.showTabs": true, // toggle
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
+
     // find
     "search.useIgnoreFiles": false,
     "search.exclude": {
@@ -52,6 +52,7 @@
         "storage": true,
         ".phpunit.result.cache": true
     },
+
     // silence the noise
     "breadcrumbs.enabled": false,
     "editor.colorDecorators": false,
@@ -79,6 +80,7 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.tips.enabled": false,
     "workbench.startupEditor": "none",
+
     // typography
     "editor.fontFamily": "Fira Code Medium",
     "editor.fontLigatures": true,
@@ -88,20 +90,37 @@
     "editor.suggestLineHeight": 35,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.5,
+
     // theme
     "helium-icon-theme.folders.theme": "classic",
     "helium-icon-theme.saturation": 0.9,
     "glassit-linux.opacity": 96,
     "workbench.colorTheme": "Palenight (Mild Contrast)",
     "workbench.iconTheme": "helium-icon-theme",
+
     // emmet
     "emmet.triggerExpansionOnTab": true,
+
     // eslint
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
     "editor.formatOnSave": true,
+
+    // php intelephense
+    "php.suggest.basic": false,
+
+    // php cs fixer
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+    },
+    "php-cs-fixer.autoFixByBracket": false,
+    "php-cs-fixer.executablePath": "php-cs-fixer",
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.showOutput": false,
+    "php-cs-fixer.rules": "@PSR2",
+
     // tailwindcss intellisense
     "tailwindCSS.includeLanguages": {
         "vue": "html"
-    },
+    }
 }
