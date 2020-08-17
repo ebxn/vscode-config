@@ -29,7 +29,6 @@
     "[vue-html]": {
         "editor.tabSize": 2
     },
-
     // hide everything
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
@@ -38,7 +37,6 @@
     "workbench.editor.showTabs": true, // toggle
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
-
     // find
     "search.useIgnoreFiles": false,
     "search.exclude": {
@@ -54,7 +52,6 @@
         "storage": true,
         ".phpunit.result.cache": true
     },
-
     // silence the noise
     "breadcrumbs.enabled": false,
     "editor.colorDecorators": false,
@@ -68,7 +65,7 @@
     "editor.hover.enabled": false,
     "editor.lightbulb.enabled": false,
     "editor.lineNumbers": "off",
-    "editor.matchBrackets": "never",
+    "editor.matchBrackets": "near",
     "editor.occurrencesHighlight": false,
     "editor.overviewRulerBorder": false,
     "editor.renderControlCharacters": false,
@@ -82,7 +79,6 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.tips.enabled": false,
     "workbench.startupEditor": "none",
-
     // typography
     "editor.fontFamily": "Fira Code Medium",
     "editor.fontLigatures": true,
@@ -92,22 +88,18 @@
     "editor.suggestLineHeight": 35,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.5,
-
     // theme
     "helium-icon-theme.folders.theme": "classic",
     "helium-icon-theme.saturation": 0.9,
     "glassit-linux.opacity": 96,
     "workbench.colorTheme": "Palenight (Mild Contrast)",
     "workbench.iconTheme": "helium-icon-theme",
-
     // emmet
     "emmet.triggerExpansionOnTab": true,
-
     // eslint
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
     "editor.formatOnSave": true,
-
     // tailwindcss intellisense
     "tailwindCSS.includeLanguages": {
         "vue": "html"
