@@ -22,7 +22,6 @@
             "console.log($1)"
         ]
     },
-
     // vue-js
     "Import Component": {
         "prefix": "cmp",
@@ -36,7 +35,7 @@
             "\tpath: '/$1',",
             "\tname: '$2',",
             "\t${3:props: true,}",
-            "\tcomponent: () => import (/* webpackChunkName: '$2' */ '@/views/$4')",
+            "\tcomponent: () => import(/* webpackChunkName: '$2' */ '@/views/$4')",
             "},$0"
         ]
     }
