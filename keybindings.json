@@ -8,11 +8,18 @@
 { "key": "ctrl+k ctrl+b",           "command": "workbench.action.toggleSidebarVisibility" },
 { "key": "ctrl+e",                  "command": "workbench.action.focusActiveEditorGroup" },
 { "key": "ctrl+t",                  "command": "workbench.action.terminal.toggleTerminal" },
+{ "key": "ctrl+k ctrl+p",           "command": "workbench.actions.view.problems" },
 
 
 // hide toaster notifications
 { "key": "escape",                  "command": "notifications.hideToasts",
                                        "when": "notificationToastsVisible" } ,
+
+// comments
+{ "key": "ctrl+[period]",           "command": "editor.action.commentLine",
+                                       "when": "editorTextFocus" },
+{ "key": "ctrl+shift+[period]",     "command": "editor.action.blockComment",
+                                       "when": "editorTextFocus" },
 
 // file explorer
 { "key": "ctrl+d",                  "command": "duplicate.execute",
@@ -105,8 +112,6 @@
                                        "when": "editorTextFocus" },
 
 // jest
-{ "key": "cmd+k cmd+r",             "command": "better-jest.run" },
-{ "key": "cmd+k cmd+f",             "command": "better-jest.run-file" },
-{ "key": "cmd+k cmd+p",             "command": "better-jest.run-previous" }
-
+{ "key": "ctrl+k ctrl+r",           "command": "better-jest.run" },
+{ "key": "ctrl+k ctrl+f",           "command": "better-jest.run-file" }
 ]

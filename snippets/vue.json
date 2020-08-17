@@ -8,7 +8,7 @@
             "",
             "<script>",
             "export default {",
-            "\tname: $1",
+            "\tname: '$1'",
             "}",
             "</script>",
             "",

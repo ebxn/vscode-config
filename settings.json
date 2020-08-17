@@ -1,30 +1,43 @@
 {
     // better defaults
-    "editor.copyWithSyntaxHighlighting": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.emptySelectionClipboard": false,
-    "workbench.editor.enablePreview": false,
-    "window.newWindowDimensions": "inherit",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "files.trimTrailingWhitespace": true,
     "diffEditor.renderSideBySide": false,
-    "editor.snippetSuggestions": "top",
+    "editor.copyWithSyntaxHighlighting": false,
     "editor.detectIndentation": false,
-    "window.nativeFullScreen": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.insertSpaces": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 4,
+    "files.autoSave": "onWindowChange",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "files.autoSave": "onWindowChange",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "window.newWindowDimensions": "inherit",
+    "window.nativeFullScreen": false,
     "window.nativeTabs": true,
+    "workbench.editor.enablePreview": false,
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+    "[vue-html]": {
+        "editor.tabSize": 2
+    },
 
     // hide everything
-    "workbench.activityBar.visible": false,
-    "workbench.sideBar.location": "right",
-    "workbench.editor.showTabs": true, // toggle
-    "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
+    "window.menuBarVisibility": "hidden",
+    "workbench.activityBar.visible": false,
+    "workbench.editor.showTabs": true, // toggle
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": false,
 
     // find
     "search.useIgnoreFiles": false,
@@ -44,8 +57,8 @@
 
     // silence the noise
     "breadcrumbs.enabled": false,
-    "git.decorations.enabled": false,
     "editor.colorDecorators": false,
+    "editor.glyphMargin": false,
     "editor.gotoLocation.multipleDeclarations": "goto",
     "editor.gotoLocation.multipleDefinitions": "goto",
     "editor.gotoLocation.multipleImplementations": "goto",
@@ -62,8 +75,10 @@
     "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "none",
     "editor.selectionHighlight": false,
+    "git.decorations.enabled": false,
     "problems.decorations.enabled": false,
     "scm.diffDecorations": "none",
+    "window.zoomLevel": 0,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.tips.enabled": false,
     "workbench.startupEditor": "none",
@@ -72,25 +87,29 @@
     "editor.fontFamily": "Fira Code Medium",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
-    "editor.suggestFontSize": 16,
     "editor.lineHeight": 40,
-    "editor.suggestLineHeight": 28,
+    "editor.suggestFontSize": 16,
+    "editor.suggestLineHeight": 35,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.5,
 
     // theme
-    "glassit-linux.opacity": 97,
-    "window.menuBarVisibility": "toggle",
+    "helium-icon-theme.folders.theme": "classic",
+    "helium-icon-theme.saturation": 0.9,
+    "glassit-linux.opacity": 96,
     "workbench.colorTheme": "Palenight (Mild Contrast)",
+    "workbench.iconTheme": "helium-icon-theme",
 
     // emmet
     "emmet.triggerExpansionOnTab": true,
 
-    // prettier
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+    // eslint
+    "eslint.packageManager": "yarn",
+    "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+
+    // tailwindcss intellisense
+    "tailwindCSS.includeLanguages": {
+        "vue": "html"
     },
-    "prettier.requireConfig": true,
-    "prettier.useEditorConfig": false
 }
