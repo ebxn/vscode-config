@@ -1,0 +1,96 @@
+{
+    // better defaults
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.autoSave": "onWindowChange",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "window.nativeTabs": true,
+
+    // hide everything
+    "workbench.activityBar.visible": false,
+    "workbench.sideBar.location": "right",
+    "workbench.editor.showTabs": true, // toggle
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+
+    // find
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        // hide everythng in /vendor, except 'laravel' and 'livewire'
+        "**/vendor/{[^l],?[^ai]}*": true,
+        // hide everything in /public except 'index' files
+        "**/public/{[^i],?[^n]}*": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true,
+        ".phpunit.result.cache": true
+    },
+
+    // silence the noise
+    "breadcrumbs.enabled": false,
+    "git.decorations.enabled": false,
+    "editor.colorDecorators": false,
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.hover.enabled": false,
+    "editor.lightbulb.enabled": false,
+    "editor.lineNumbers": "off",
+    "editor.matchBrackets": "never",
+    "editor.occurrencesHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderControlCharacters": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderLineHighlight": "none",
+    "editor.selectionHighlight": false,
+    "problems.decorations.enabled": false,
+    "scm.diffDecorations": "none",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.tips.enabled": false,
+    "workbench.startupEditor": "none",
+
+    // typography
+    "editor.fontFamily": "Fira Code Medium",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.suggestFontSize": 16,
+    "editor.lineHeight": 40,
+    "editor.suggestLineHeight": 28,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.lineHeight": 1.5,
+
+    // theme
+    "glassit-linux.opacity": 97,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Palenight (Mild Contrast)",
+
+    // emmet
+    "emmet.triggerExpansionOnTab": true,
+
+    // prettier
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "prettier.requireConfig": true,
+    "prettier.useEditorConfig": false
+}

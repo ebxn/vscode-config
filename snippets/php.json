@@ -1,0 +1,48 @@
+{
+    "Public Method": {
+        "prefix": "met",
+        "body": [
+            "public function ${1:name}()",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Private Method": {
+        "prefix": "pimet",
+        "body": [
+            "private function ${1:name}()",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Protected Method": {
+        "prefix": "pomet",
+        "body": [
+            "protected function ${1:name}()",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Test Boilerplate": {
+        "prefix": "test",
+        "body": [
+            "namespace Tests\\Feature;",
+            "",
+            "use Tests\\TestCase;",
+            "use Illuminate\\Foundation\\Testing\\DatabaseMigrations;",
+            "",
+            "class ${1:Test} extends TestCase",
+            "{",
+            "\tuse DatabaseMigrations;",
+            "",
+            "\tfunction it_${2:does_something}()",
+            "\t{",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ]
+    }
+}

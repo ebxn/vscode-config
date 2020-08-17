@@ -1,0 +1,43 @@
+{
+    "Import": {
+        "prefix": "imp",
+        "body": "import $1 from '$2'",
+        "description": "Generic import"
+    },
+    "Query Selector": {
+        "prefix": "ds",
+        "body": [
+            "document.querySelector($1)"
+        ]
+    },
+    "Query Selector All": {
+        "prefix": "dsq",
+        "body": [
+            "document.querySelectorAll($1)"
+        ]
+    },
+    "Console Log": {
+        "prefix": "con",
+        "body": [
+            "console.log($1)"
+        ]
+    },
+
+    // vue-js
+    "Import Component": {
+        "prefix": "cmp",
+        "body": "import ${1:Component} from '@/components/$2.vue'",
+        "description": "Import Vue component"
+    },
+    "Route": {
+        "prefix": "vr",
+        "body": [
+            "{",
+            "\tpath: '/$1',",
+            "\tname: '$2',",
+            "\t${3:props: true,}",
+            "\tcomponent: () => import (/* webpackChunkName: '$2' */ '@/views/$4')",
+            "},$0"
+        ]
+    }
+}
