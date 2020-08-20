@@ -66,7 +66,7 @@
     "editor.hover.enabled": false,
     "editor.lightbulb.enabled": false,
     "editor.lineNumbers": "off",
-    "editor.matchBrackets": "near",
+    "editor.matchBrackets": "never",
     "editor.occurrencesHighlight": false,
     "editor.overviewRulerBorder": false,
     "editor.renderControlCharacters": false,
@@ -122,5 +122,6 @@
     // tailwindcss intellisense
     "tailwindCSS.includeLanguages": {
         "vue": "html"
-    }
+    },
+    "explorer.confirmDragAndDrop": false
 }
