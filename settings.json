@@ -101,11 +101,14 @@
 
     // emmet
     "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
 
     // eslint
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
 
     // php cs fixer
     "[php]": {

@@ -1,8 +1,12 @@
 {
-    "Import": {
+    /* GENERAL */
+    "Import Default Export": {
         "prefix": "imp",
         "body": "import $1 from '$2'",
-        "description": "Generic import"
+    },
+    "Import Named Export": {
+        "prefix": "imd",
+        "body": "import { $1 } from '$2'",
     },
     "Query Selector": {
         "prefix": "ds",
@@ -22,13 +26,96 @@
             "console.log($1)"
         ]
     },
-    // vue-js
-    "Import Component": {
+
+    /* REACT */
+    // imports
+    "Import React": {
+        "prefix": "imr",
+        "body": "import React from 'react'",
+    },
+    "Import React and Component": {
+        "prefix": "imrc",
+        "body": "import React, { Component } from 'react'",
+    },
+    "Import PropTypes": {
+        "prefix": "impt",
+        "body": "import PropTypes from 'prop-types'"
+    },
+
+
+    // lifecycle methods
+    "Component Did Mount": {
+        "prefix": "cdm",
+        "body": [
+            "componentDidMount () {",
+            "\t$1",
+            "}"
+        ],
+    },
+    "Component Did Update": {
+        "prefix": "cdu",
+        "body": [
+            "componentDidUpdate (prevProps, prevState) {",
+            "\t$1",
+            "}"
+        ],
+    },
+    "Component Will Unmount": {
+        "prefix": "cwu",
+        "body": [
+            "componentWillUnmount () {",
+            "\t$1",
+            "}"
+        ],
+    },
+
+    // class components
+    "React Class Component": {
+        "prefix": "rcinit",
+        "body": [
+            "import React, { Component } from 'react'",
+            "",
+            "export default class ${1:Class} extends Component {",
+            "\tconstructor (props) {",
+            "\t\tsuper(props)",
+            "\t\tthis.state = {  }",
+            "\t}",
+            "",
+            "\trender () {",
+            "\t\treturn (",
+            "\t\t\t$0",
+            "\t\t)",
+            "\t}",
+            "}"
+        ],
+    },
+    "Bind In Constructor": {
+        "prefix": "bic",
+        "body": "this.$1 = this.$1.bind(this)"
+    },
+
+    // function components
+    "React Function Component": {
+        "prefix": "rinit",
+        "body": [
+            "import React from 'react'",
+            "",
+            "const ${1:Name} = (props) => {",
+            "\treturn (",
+            "\t\t$0",
+            "\t)",
+            "}",
+            "",
+            "export default ${1:Name}"
+        ],
+    },
+
+    /* vue */
+    "Import Vue Component": {
         "prefix": "cmp",
         "body": "import ${1:Component} from '@/components/$2.vue'",
-        "description": "Import Vue component"
     },
-    "Route": {
+    "Create Vue Route": {
         "prefix": "vr",
         "body": [
             "{",
