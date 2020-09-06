@@ -26,52 +26,14 @@
             "console.log($1)"
         ]
     },
-    /* REACT */
-    // imports
-    "Import React": {
-        "prefix": "imr",
-        "body": "import React from 'react'",
-    },
-    "Import React and Component": {
-        "prefix": "imrc",
-        "body": "import React, { Component } from 'react'",
-    },
-    "Import PropTypes": {
-        "prefix": "impt",
-        "body": "import PropTypes from 'prop-types'"
-    },
-    // lifecycle methods
-    "Component Did Mount": {
-        "prefix": "cdm",
-        "body": [
-            "componentDidMount () {",
-            "\t$1",
-            "}"
-        ],
-    },
-    "Component Did Update": {
-        "prefix": "cdu",
-        "body": [
-            "componentDidUpdate (prevProps, prevState) {",
-            "\t$1",
-            "}"
-        ],
-    },
-    "Component Will Unmount": {
-        "prefix": "cwu",
-        "body": [
-            "componentWillUnmount () {",
-            "\t$1",
-            "}"
-        ],
-    },
-    // class components
+    
+    /* React */
     "React Class Component": {
         "prefix": "rcinit",
         "body": [
             "import React, { Component } from 'react'",
             "",
-            "export default class ${1:Class} extends Component {",
+            "class ${1:Class} extends Component {",
             "\tconstructor (props) {",
             "\t\tsuper(props)",
             "\t\tthis.state = {}",
@@ -82,14 +44,11 @@
             "\t\t\t$0",
             "\t\t)",
             "\t}",
-            "}"
+            "}",
+            "",
+            "export default ${1:Class}"
         ],
     },
-    "Bind In Constructor": {
-        "prefix": "bic",
-        "body": "this.$1 = this.$1.bind(this)"
-    },
-    // function components
     "React Function Component": {
         "prefix": "rinit",
         "body": [
@@ -104,7 +63,16 @@
             "export default ${1:Name}"
         ],
     },
-    /* vue */
+    "Import PropTypes": {
+        "prefix": "impt",
+        "body": "import PropTypes from 'prop-types'"
+    },
+    "Bind In Constructor": {
+        "prefix": "bic",
+        "body": "this.$1 = this.$1.bind(this)"
+    },
+
+    /* Vue */
     "Import Vue Component": {
         "prefix": "cmp",
         "body": "import ${1:Component} from '@/components/$2.vue'",
