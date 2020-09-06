@@ -4,7 +4,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.autoClosingBrackets": "always",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.detectIndentation": false,
     "editor.emptySelectionClipboard": false,
@@ -97,9 +96,6 @@
     "workbench.iconTheme": "helium-icon-theme",
     // emmet
     "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
     // eslint
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
@@ -115,10 +111,6 @@
     "php-cs-fixer.showOutput": false,
     // php intelephense
     "php.suggest.basic": false,
-    // tailwindcss intellisense
-    "tailwindCSS.includeLanguages": {
-        "vue": "html"
-    },
     // vetur
     "vetur.completion.scaffoldSnippetSources": {
         "user": "",
