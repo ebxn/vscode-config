@@ -1,91 +1,29 @@
 {
-    /* GENERAL */
-    "Import Default Export": {
-        "prefix": "imp",
-        "body": "import $1 from '$2'",
-    },
-    "Import Named Export": {
-        "prefix": "imd",
-        "body": "import { $1 } from '$2'",
-    },
-    "Query Selector": {
-        "prefix": "ds",
-        "body": [
-            "document.querySelector($1)"
-        ]
-    },
-    "Query Selector All": {
-        "prefix": "dsq",
-        "body": [
-            "document.querySelectorAll($1)"
-        ]
-    },
-    "Console Log": {
-        "prefix": "con",
-        "body": [
-            "console.log($1)"
-        ]
-    },
-    
-    /* React */
-    "React Class Component": {
-        "prefix": "rcinit",
-        "body": [
-            "import React, { Component } from 'react'",
-            "",
-            "class ${1:Class} extends Component {",
-            "\tconstructor (props) {",
-            "\t\tsuper(props)",
-            "\t\tthis.state = {}",
-            "\t}",
-            "",
-            "\trender () {",
-            "\t\treturn (",
-            "\t\t\t$0",
-            "\t\t)",
-            "\t}",
-            "}",
-            "",
-            "export default ${1:Class}"
-        ],
-    },
-    "React Function Component": {
-        "prefix": "rinit",
-        "body": [
-            "import React from 'react'",
-            "",
-            "const ${1:Name} = (props) => {",
-            "\treturn (",
-            "\t\t$0",
-            "\t)",
-            "}",
-            "",
-            "export default ${1:Name}"
-        ],
-    },
-    "Import PropTypes": {
-        "prefix": "impt",
-        "body": "import PropTypes from 'prop-types'"
-    },
-    "Bind In Constructor": {
-        "prefix": "bic",
-        "body": "this.$1 = this.$1.bind(this)"
-    },
-
-    /* Vue */
-    "Import Vue Component": {
-        "prefix": "cmp",
-        "body": "import ${1:Component} from '@/components/$2.vue'",
-    },
-    "Create Vue Route": {
-        "prefix": "vr",
-        "body": [
-            "{",
-            "\tpath: '/$1',",
-            "\tname: '$2',",
-            "\t${3:props: true,}",
-            "\tcomponent: () => import(/* webpackChunkName: '$2' */ '@/views/$4')",
-            "},$0"
-        ]
-    }
+  /* GENERAL */
+  "Import Default Export": {
+    "prefix": "imp",
+    "body": "import $1 from '$2'",
+  },
+  "Import Named Export": {
+    "prefix": "imd",
+    "body": "import { $1 } from '$2'",
+  },
+  "Query Selector": {
+    "prefix": "ds",
+    "body": [
+      "document.querySelector($1)"
+    ]
+  },
+  "Query Selector All": {
+    "prefix": "dsq",
+    "body": [
+      "document.querySelectorAll($1)"
+    ]
+  },
+  "Console Log": {
+    "prefix": "con",
+    "body": [
+      "console.log($1)"
+    ]
+  }
 }

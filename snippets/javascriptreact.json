@@ -1,0 +1,67 @@
+{
+  "Import Default Export": {
+    "prefix": "imp",
+    "body": "import $1 from '$2'",
+  },
+  "Import Named Export": {
+    "prefix": "imd",
+    "body": "import { $1 } from '$2'",
+  },
+  "Console Log": {
+    "prefix": "con",
+    "body": [
+      "console.log($1)"
+    ]
+  },
+  "Import React": {
+    "prefix": "impr",
+    "body": "import React from 'react'"
+  },
+  "Import ReactDOM": {
+    "prefix": "imprd",
+    "body": "import ReactDOM from 'react-dom'"
+  },
+  "Import PropTypes": {
+    "prefix": "impt",
+    "body": "import PropTypes from 'prop-types'"
+  },
+  "Class Component": {
+    "prefix": "rcinit",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "class ${1:Class} extends Component {",
+      "\tconstructor (props) {",
+      "\t\tsuper(props)",
+      "\t\tthis.state = {}",
+      "\t}",
+      "",
+      "\trender () {",
+      "\t\treturn (",
+      "\t\t\t$0",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:Class}"
+    ],
+  },
+  "Function Component": {
+    "prefix": "rinit",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:Name} = (props) => {",
+      "\treturn (",
+      "\t\t$0",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:Name}"
+    ],
+  },
+  "Bind In Constructor": {
+    "prefix": "bic",
+    "body": "this.$1 = this.$1.bind(this)"
+  }
+}
