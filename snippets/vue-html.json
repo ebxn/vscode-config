@@ -1,8 +1,8 @@
 {
-    "Router View": {
-        "prefix": "vrv",
-        "body": [
-            "<router-view :key=\"\\$route.fullPath\" />"
-        ]
-    }
+  "Router View": {
+    "prefix": "vrv",
+    "body": [
+      "<router-view :key=\"\\$route.fullPath\" />"
+    ]
+  }
 }

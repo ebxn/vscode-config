@@ -12,6 +12,9 @@
     "editor.snippetSuggestions": "top",
     "editor.tabSize": 4,
     "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
     "files.autoSave": "onWindowChange",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -23,12 +26,19 @@
     "[javascript]": {
         "editor.tabSize": 2
     },
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
     "[vue]": {
         "editor.tabSize": 2
     },
     "[vue-html]": {
         "editor.tabSize": 2
     },
+
     // hide everything
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
@@ -37,6 +47,7 @@
     "workbench.editor.showTabs": true, // toggle
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
+
     // find
     "search.useIgnoreFiles": false,
     "search.exclude": {
@@ -52,6 +63,7 @@
         "storage": true,
         ".phpunit.result.cache": true
     },
+
     // silence the noise
     "breadcrumbs.enabled": false,
     "editor.colorDecorators": false,
@@ -79,6 +91,7 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.tips.enabled": false,
     "workbench.startupEditor": "none",
+
     // typography
     "editor.fontFamily": "Fira Code Medium",
     "editor.fontLigatures": true,
@@ -88,29 +101,26 @@
     "editor.suggestLineHeight": 35,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.5,
+    
     // theme
+    "glassit-linux.opacity": 96,
     "helium-icon-theme.folders.theme": "classic",
     "helium-icon-theme.saturation": 0.9,
-    "glassit-linux.opacity": 96,
     "workbench.colorTheme": "Palenight (Mild Contrast)",
     "workbench.iconTheme": "helium-icon-theme",
+    
     // emmet
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "plaintext": "pug"
+    },
     "emmet.triggerExpansionOnTab": true,
+
     // eslint
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
     "editor.formatOnSave": true,
-    // php cs fixer
-    "[php]": {
-        "editor.defaultFormatter": "junstyle.php-cs-fixer"
-    },
-    "php-cs-fixer.autoFixByBracket": false,
-    "php-cs-fixer.executablePath": "php-cs-fixer",
-    "php-cs-fixer.onsave": true,
-    "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.showOutput": false,
-    // php intelephense
-    "php.suggest.basic": false,
+
     // vetur
     "vetur.completion.scaffoldSnippetSources": {
         "user": "",

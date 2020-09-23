@@ -1,45 +1,45 @@
 {
-    "Public Method": {
-        "prefix": "met",
-        "body": [
-            "public function ${1:name}()",
-            "{",
-            "\t$0",
-            "}"
-        ]
-    },
-    "Private Method": {
-        "prefix": "pimet",
-        "body": [
-            "private function ${1:name}()",
-            "{",
-            "\t$0",
-            "}"
-        ]
-    },
-    "Protected Method": {
-        "prefix": "pomet",
-        "body": [
-            "protected function ${1:name}()",
-            "{",
-            "\t$0",
-            "}"
-        ]
-    },
-    "Test Method": {
-        "prefix": "test",
-        "body": [
-            "/** @test */",
-            "public function it_$1()",
-            "{",
-            "\t$0",
-            "}"
-        ]
-    },
-    "Tinker": {
-        "prefix": "tinker",
-        "body": [
-            "eval(\\Psy\\sh());"
-        ]
-    }
+  "Public Method": {
+    "prefix": "met",
+    "body": [
+      "public function ${1:name}()",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Private Method": {
+    "prefix": "pimet",
+    "body": [
+      "private function ${1:name}()",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Protected Method": {
+    "prefix": "pomet",
+    "body": [
+      "protected function ${1:name}()",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Test Method": {
+    "prefix": "test",
+    "body": [
+      "/** @test */",
+      "public function it_$1()",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Tinker": {
+    "prefix": "tinker",
+    "body": [
+      "eval(\\Psy\\sh());"
+    ]
+  }
 }

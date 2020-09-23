@@ -1,20 +1,20 @@
 {
-    "Init": {
-        "prefix": "vinit",
-        "body": [
-            "<template>",
-            "\t$0",
-            "</template>",
-            "",
-            "<script>",
-            "export default {",
-            "\tname: '$1'",
-            "}",
-            "</script>",
-            "",
-            "<style lang=\"scss\" scoped>",
-            "",
-            "</style>"
-        ]
-    }
+  "Init": {
+    "prefix": "vinit",
+    "body": [
+      "<template>",
+      "\t$0",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "\tname: '$1'",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ]
+  }
 }
