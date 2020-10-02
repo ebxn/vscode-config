@@ -10,11 +10,7 @@
       "export default {",
       "\tname: '$1'",
       "}",
-      "</script>",
-      "",
-      "<style lang=\"scss\" scoped>",
-      "",
-      "</style>"
+      "</script>"
     ]
   }
 }
