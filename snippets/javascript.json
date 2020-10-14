@@ -1,5 +1,5 @@
 {
-  /* GENERAL */
+  /* general */
   "Import Default Export": {
     "prefix": "imp",
     "body": "import $1 from '$2'",
@@ -8,22 +8,30 @@
     "prefix": "imd",
     "body": "import { $1 } from '$2'",
   },
-  "Query Selector": {
-    "prefix": "ds",
+  
+  /* vue */
+  "Vue Data": {
+    "prefix": "vdata",
     "body": [
-      "document.querySelector($1)"
+      "data: () => ({",
+      "\t$0",
+      "}),"
     ]
   },
-  "Query Selector All": {
-    "prefix": "dsq",
+  "Vue Component Import": {
+    "prefix": "vcmp",
     "body": [
-      "document.querySelectorAll($1)"
+      "import $1 from '@/components/$2.vue'"
     ]
   },
-  "Console Log": {
-    "prefix": "con",
+  "Vue Route": {
+    "prefix": "vroute",
     "body": [
-      "console.log($1)"
+      "{",
+      "\tpath: '/$1',",
+      "\tname: '$2',",
+      "\tcomponent: () => import(/* webpackChunkName: \"$3\" */ '@/views/$2.vue')",
+      "},"
     ]
   }
 }

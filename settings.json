@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // better defaults
+    /* better defaults */
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -13,7 +13,7 @@
     "editor.tabSize": 4,
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
-        "*.js": "javascriptreact"
+        // "*.js": "javascriptreact" // uncomment if using React
     },
     "files.autoSave": "onWindowChange",
     "files.insertFinalNewline": true,
@@ -23,23 +23,17 @@
     "window.nativeFullScreen": false,
     "window.nativeTabs": true,
     "workbench.editor.enablePreview": false,
-    "[javascript]": {
-        "editor.tabSize": 2
-    },
-    "[javascriptreact]": {
-        "editor.tabSize": 2
-    },
-    "[json]": {
-        "editor.tabSize": 2
-    },
-    "[vue]": {
-        "editor.tabSize": 2
-    },
-    "[vue-html]": {
-        "editor.tabSize": 2
-    },
 
-    // hide everything
+    /* tab sizes */
+    "[html]": { "editor.tabSize": 2 },
+    "[javascript]": { "editor.tabSize": 2 },
+    "[javascriptreact]": { "editor.tabSize": 2 },
+    "[json]": { "editor.tabSize": 2 },
+    "[scss]": { "editor.tabSize": 2 },
+    "[vue]": { "editor.tabSize": 2 },
+    "[vue-html]": { "editor.tabSize": 2 },
+
+    /* hide everything */
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
     "window.menuBarVisibility": "hidden",
@@ -48,7 +42,7 @@
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
 
-    // find
+    /* find */
     "search.useIgnoreFiles": false,
     "search.exclude": {
         // hide everythng in /vendor, except 'laravel' and 'livewire'
@@ -64,7 +58,7 @@
         ".phpunit.result.cache": true
     },
 
-    // silence the noise
+    /* silence the noise */
     "breadcrumbs.enabled": false,
     "editor.colorDecorators": false,
     "editor.glyphMargin": false,
@@ -92,7 +86,7 @@
     "workbench.tips.enabled": false,
     "workbench.startupEditor": "none",
 
-    // typography
+    /* typography */
     "editor.fontFamily": "Fira Code Medium",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
@@ -102,29 +96,35 @@
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.5,
     
-    // theme
+    /* theme */
     "glassit-linux.opacity": 96,
     "helium-icon-theme.folders.theme": "classic",
     "helium-icon-theme.saturation": 0.9,
     "workbench.colorTheme": "Palenight (Mild Contrast)",
     "workbench.iconTheme": "helium-icon-theme",
     
-    // emmet
+    /* emmet */
     "emmet.includeLanguages": {
-        "vue-html": "html",
-        "plaintext": "pug"
+        "vue-html": "html"
     },
     "emmet.triggerExpansionOnTab": true,
 
-    // eslint
+    /* eslint */
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
     "editor.formatOnSave": true,
 
-    // vetur
+    /* vetur */
     "vetur.completion.scaffoldSnippetSources": {
         "user": "",
         "vetur": "",
         "workspace": ""
+    },
+    "vetur.grammar.customBlocks": {
+        "page-query": "graphql",
+        "static-query": "graphql"
     }
 }

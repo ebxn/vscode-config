@@ -12,5 +12,30 @@
       "}",
       "</script>"
     ]
+  },
+  "Style Tags": {
+    "prefix": "style",
+    "body": [
+      "<style lang=\"scss\" scoped>",
+      "\t$0",
+      "</style>"
+    ]
+  },
+  /* gridsome */
+  "GraphQL Page Query": {
+    "prefix": "pquery",
+    "body": [
+      "<page-query>",
+      "\t$0",
+      "</page-query>"
+    ]
+  },
+  "GraphQL Static Query": {
+    "prefix": "squery",
+    "body": [
+      "<static-query>",
+      "\t$0",
+      "</static-query>"
+    ]
   }
 }
