@@ -21,6 +21,7 @@
       "</style>"
     ]
   },
+  
   /* gridsome */
   "GraphQL Page Query": {
     "prefix": "pquery",

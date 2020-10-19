@@ -10,18 +10,24 @@
   },
   
   /* vue */
+  "Vue Component Import": {
+    "prefix": "vcmp",
+    "body": [
+      "import $1 from '@/components/$2.vue'"
+    ]
+  },
+  "Vuex Import": {
+    "prefix": "vx",
+    "body": [
+      "import { $1 } from 'vuex'"
+    ]
+  },
   "Vue Data": {
     "prefix": "vdata",
     "body": [
       "data: () => ({",
       "\t$0",
       "}),"
-    ]
-  },
-  "Vue Component Import": {
-    "prefix": "vcmp",
-    "body": [
-      "import $1 from '@/components/$2.vue'"
     ]
   },
   "Vue Route": {
