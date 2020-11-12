@@ -28,6 +28,9 @@
                                        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
 { "key": "shift+ctrl+n",            "command": "explorer.newFolder",
                                        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
+{ "key": "enter",                   "command": "renameFile",
+                                       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" },
+
 
 // terminal panel splitting
 { "key": "alt+n",                   "command": "workbench.action.terminal.split",

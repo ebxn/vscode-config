@@ -13,15 +13,32 @@
       "</script>"
     ]
   },
+  "Init w/ Styles": {
+    "prefix": "vinits",
+    "body": [
+      "<template>",
+      "\t$0",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "\tname: '$1'",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "\t",
+      "</style>"
+    ]
+  },
   "Style Tags": {
     "prefix": "style",
     "body": [
-      "<style lang=\"scss\" scoped>",
+      "<style scoped>",
       "\t$0",
       "</style>"
     ]
   },
-  
   /* gridsome */
   "GraphQL Page Query": {
     "prefix": "pquery",

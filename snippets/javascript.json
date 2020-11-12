@@ -8,10 +8,10 @@
     "prefix": "imd",
     "body": "import { $1 } from '$2'",
   },
-  
+
   /* vue */
   "Vue Component Import": {
-    "prefix": "vcmp",
+    "prefix": "vc",
     "body": [
       "import $1 from '@/components/$2.vue'"
     ]
@@ -23,7 +23,7 @@
     ]
   },
   "Vue Data": {
-    "prefix": "vdata",
+    "prefix": "vd",
     "body": [
       "data: () => ({",
       "\t$0",
@@ -31,13 +31,33 @@
     ]
   },
   "Vue Route": {
-    "prefix": "vroute",
+    "prefix": "vr",
     "body": [
       "{",
       "\tpath: '/$1',",
       "\tname: '$2',",
-      "\tcomponent: () => import(/* webpackChunkName: \"$3\" */ '@/views/$2.vue')",
+      "\tcomponent: () => import(/* webpackChunkName: \"$1\" */ '@/views/$2.vue')",
       "},"
+    ]
+  },
+  "VueX Boilerplate": {
+    "prefix": "vxbp",
+    "body": [
+      "const state = {}",
+      "",
+      "const mutations = {}",
+      "",
+      "const actions = {}",
+      "",
+      "const getters = {}",
+      "",
+      "export default {",
+      "\tnamespaced: true,",
+      "\tstate,",
+      "\tactions,",
+      "\tmutations,",
+      "\tgetters",
+      "}"
     ]
   }
 }

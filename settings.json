@@ -29,7 +29,7 @@
     "[html]": { "editor.tabSize": 2 },
     "[javascript]": { "editor.tabSize": 2 },
     "[javascriptreact]": { "editor.tabSize": 2 },
-    "[json]": { "editor.tabSize": 2 },
+    "[json]": { "editor.tabSize": 2, "editor.formatOnSave": false },
     "[scss]": { "editor.tabSize": 2 },
     "[vue]": { "editor.tabSize": 2 },
     "[vue-html]": { "editor.tabSize": 2 },
@@ -98,6 +98,8 @@
     "terminal.integrated.lineHeight": 1.5,
     
     /* theme */
+    "editor.cursorBlinking": "smooth",
+    // "editor.cursorSmoothCaretAnimation": true,
     "glassit-linux.opacity": 96,
     "helium-icon-theme.folders.theme": "classic",
     "helium-icon-theme.saturation": 0.9,
@@ -117,6 +119,11 @@
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
     "editor.formatOnSave": true,
+
+    /* tailwind */
+    "tailwindCSS.includeLanguages": {
+        "vue-html": "html"
+    },
 
     /* vetur */
     "vetur.completion.scaffoldSnippetSources": {
