@@ -1,39 +1,31 @@
 {
-  "Import Default Export": {
-    "prefix": "imp",
-    "body": "import $1 from '$2'",
-  },
-  "Import Named Export": {
-    "prefix": "imd",
-    "body": "import { $1 } from '$2'",
-  },
-  "Import React": {
-    "prefix": "impr",
-    "body": "import React from 'react'"
-  },
-  "Import ReactDOM": {
-    "prefix": "imprd",
-    "body": "import ReactDOM from 'react-dom'"
-  },
-  "Import PropTypes": {
-    "prefix": "impt",
-    "body": "import PropTypes from 'prop-types'"
-  },
-  "Import Component": {
-    "prefix": "rc",
+  "console.log()": {
+    "prefix": "con",
     "body": [
-      "import $1 from '../$2'"
+      "console.log($1)"
     ]
   },
-  "Bind In Constructor": {
+  "import x from 'y'": {
+    "prefix": "imp",
+    "body": [
+      "import $1 from '$2'"
+    ]
+  },
+  "import { x } from 'y'": {
+    "prefix": "imd",
+    "body": [
+      "import { $1 } from '$2'"
+    ]
+  },
+  "this.x = this.x.bind(this)": {
     "prefix": "bic",
     "body": "this.$1 = this.$1.bind(this)"
   },
-  "Class Component": {
+
+  "React: Class Component": {
     "prefix": "rcinit",
     "body": [
-      // "import React, { Component } from 'react'",
-      "import { Component } from 'react'",
+      "import React, { Component } from 'react'",
       "",
       "class ${1:Class} extends Component {",
       "\tconstructor (props) {",
@@ -51,11 +43,11 @@
       "export default ${1:Class}"
     ],
   },
-  "Function Component": {
+  "React: Functional Component": {
     "prefix": "rinit",
     "body": [
-      // "import React from 'react'",
-      // "",
+      "import React from 'react'",
+      "",
       "const ${1:Name} = (props) => {",
       "\treturn (",
       "\t\t$0",
@@ -65,7 +57,17 @@
       "export default ${1:Name}"
     ],
   },
-  "React Fragment Shorthand": {
+  "React: Import PropTypes": {
+    "prefix": "impt",
+    "body": "import PropTypes from 'prop-types'"
+  },
+  "React: Import Component": {
+    "prefix": "rc",
+    "body": [
+      "import $1 from '../$2'"
+    ]
+  },
+  "React: Fragment Shorthand": {
     "prefix": "rf",
     "body": [
       "<>",

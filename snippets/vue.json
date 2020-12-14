@@ -1,5 +1,5 @@
 {
-  "Init": {
+  "Vue: SFC": {
     "prefix": "vinit",
     "body": [
       "<template>",
@@ -13,8 +13,8 @@
       "</script>"
     ]
   },
-  "Init w/ Styles": {
-    "prefix": "vinits",
+  "Vue: SFC (SASS)": {
+    "prefix": "vinitscss",
     "body": [
       "<template>",
       "\t$0",
@@ -31,17 +31,16 @@
       "</style>"
     ]
   },
-  "Style Tags": {
+  "Vue: <style />": {
     "prefix": "style",
     "body": [
-      "<style $1 scoped>",
+      "<style$1 scoped>",
       "\t$0",
       "</style>"
     ]
   },
 
-  /* gridsome */
-  "GraphQL Page Query": {
+  "Vue: GraphQL Page Query": {
     "prefix": "pquery",
     "body": [
       "<page-query>",
@@ -49,7 +48,7 @@
       "</page-query>"
     ]
   },
-  "GraphQL Static Query": {
+  "Vue: GraphQL Static Query": {
     "prefix": "squery",
     "body": [
       "<static-query>",

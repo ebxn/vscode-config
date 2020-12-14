@@ -1,36 +1,46 @@
 {
-  /* general */
-  "Import Default Export": {
-    "prefix": "imp",
-    "body": "import $1 from '$2'",
+  "console.log()": {
+    "prefix": "con",
+    "body": [
+      "console.log($1)"
+    ]
   },
-  "Import Named Export": {
+  "import x from 'y'": {
+    "prefix": "imp",
+    "body": [
+      "import $1 from '$2'"
+    ]
+  },
+  "import { x } from 'y'": {
     "prefix": "imd",
-    "body": "import { $1 } from '$2'",
+    "body": [
+      "import { $1 } from '$2'"
+    ]
   },
 
-  /* vue */
-  "Vue Component Import": {
+  "Vue: Import Component": {
     "prefix": "vc",
     "body": [
       "import $1 from '@/components/$2.vue'"
     ]
   },
-  "Vuex Import": {
+  "Vue: Import Vuex Helper": {
     "prefix": "vx",
     "body": [
       "import { $1 } from 'vuex'"
     ]
   },
-  "Vue Data": {
+  "Vue: Data": {
     "prefix": "vd",
     "body": [
-      "data: () => ({",
-      "\t$0",
-      "}),"
+      "data: function () {",
+      "\treturn {",
+      "\t\t$0",
+      "\t}",
+      "},"
     ]
   },
-  "Vue Route": {
+  "Vue: Route": {
     "prefix": "vr",
     "body": [
       "{",
@@ -40,7 +50,7 @@
       "},"
     ]
   },
-  "VueX Boilerplate": {
+  "Vue: VueX Boilerplate": {
     "prefix": "vxbp",
     "body": [
       "const state = {}",
