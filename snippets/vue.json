@@ -34,11 +34,12 @@
   "Style Tags": {
     "prefix": "style",
     "body": [
-      "<style scoped>",
+      "<style $1 scoped>",
       "\t$0",
       "</style>"
     ]
   },
+
   /* gridsome */
   "GraphQL Page Query": {
     "prefix": "pquery",

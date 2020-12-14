@@ -11,9 +11,10 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.tabSize": 4,
+    "editor.wordWrap": "on",
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
-        // "*.js": "javascriptreact" // uncomment if using React
+        "*.js": "javascriptreact" // uncomment if using React
     },
     "files.autoSave": "onWindowChange",
     "files.insertFinalNewline": true,
@@ -26,13 +27,31 @@
     "workbench.editor.enablePreview": false,
 
     /* tab sizes */
-    "[html]": { "editor.tabSize": 2 },
-    "[javascript]": { "editor.tabSize": 2 },
-    "[javascriptreact]": { "editor.tabSize": 2 },
-    "[json]": { "editor.tabSize": 2, "editor.formatOnSave": false },
-    "[scss]": { "editor.tabSize": 2 },
-    "[vue]": { "editor.tabSize": 2 },
-    "[vue-html]": { "editor.tabSize": 2 },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": false
+    },
+    "[css]": {
+        "editor.tabSize": 2
+    },
+    "[scss]": {
+        "editor.tabSize": 2
+    },
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+    "[vue-html]": {
+        "editor.tabSize": 2
+    },
 
     /* hide everything */
     "editor.minimap.enabled": false,
@@ -41,7 +60,7 @@
     "workbench.activityBar.visible": false,
     "workbench.editor.showTabs": true, // toggle
     "workbench.sideBar.location": "right",
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
 
     /* find */
     "search.useIgnoreFiles": false,
@@ -110,8 +129,11 @@
     "emmet.includeLanguages": {
         "vue-html": "html"
     },
+    "emmet.excludeLanguages": [
+        "jsx"
+    ],
     "emmet.triggerExpansionOnTab": true,
-
+    
     /* eslint */
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
@@ -119,7 +141,7 @@
     "eslint.packageManager": "yarn",
     "eslint.format.enable": true,
     "editor.formatOnSave": true,
-
+    
     /* tailwind */
     "tailwindCSS.includeLanguages": {
         "vue-html": "html"
@@ -134,5 +156,5 @@
     "vetur.grammar.customBlocks": {
         "page-query": "graphql",
         "static-query": "graphql"
-    }
+    },
 }

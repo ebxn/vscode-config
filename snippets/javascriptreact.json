@@ -7,12 +7,6 @@
     "prefix": "imd",
     "body": "import { $1 } from '$2'",
   },
-  "Console Log": {
-    "prefix": "con",
-    "body": [
-      "console.log($1)"
-    ]
-  },
   "Import React": {
     "prefix": "impr",
     "body": "import React from 'react'"
@@ -25,10 +19,21 @@
     "prefix": "impt",
     "body": "import PropTypes from 'prop-types'"
   },
+  "Import Component": {
+    "prefix": "rc",
+    "body": [
+      "import $1 from '../$2'"
+    ]
+  },
+  "Bind In Constructor": {
+    "prefix": "bic",
+    "body": "this.$1 = this.$1.bind(this)"
+  },
   "Class Component": {
     "prefix": "rcinit",
     "body": [
-      "import React, { Component } from 'react'",
+      // "import React, { Component } from 'react'",
+      "import { Component } from 'react'",
       "",
       "class ${1:Class} extends Component {",
       "\tconstructor (props) {",
@@ -49,8 +54,8 @@
   "Function Component": {
     "prefix": "rinit",
     "body": [
-      "import React from 'react'",
-      "",
+      // "import React from 'react'",
+      // "",
       "const ${1:Name} = (props) => {",
       "\treturn (",
       "\t\t$0",
@@ -60,8 +65,12 @@
       "export default ${1:Name}"
     ],
   },
-  "Bind In Constructor": {
-    "prefix": "bic",
-    "body": "this.$1 = this.$1.bind(this)"
+  "React Fragment Shorthand": {
+    "prefix": "rf",
+    "body": [
+      "<>",
+      "\t$0",
+      "</>",
+    ]
   }
 }
