@@ -1,0 +1,12 @@
+Color Highlight           - Sergil Naumov
+Disable Ligatures         - CoenraadS
+Duplicate action          - mrmlnc
+ESLint                    - Dirk Baeumer
+GlassIt Linux             - nowsci
+GraphQL for VSCode        - Kumar Harsh
+Helium Icon Theme         - Helgard Richard Ferreira
+Laravel Blade Spacer      - Austen Cameron
+Palenight Theme           - Olaolu Olawuyi
+Tailwind CSS IntelliSense - Brad Cornes
+Toggle                    - Peng Lv
+Vetur                     - Pine Wu
