@@ -1,78 +1,73 @@
 {
-  "console.log()": {
-    "prefix": "con",
-    "body": [
-      "console.log($1)"
-    ]
-  },
-  "import x from 'y'": {
-    "prefix": "imp",
-    "body": [
-      "import $1 from '$2'"
-    ]
-  },
-  "import { x } from 'y'": {
-    "prefix": "imd",
-    "body": [
-      "import { $1 } from '$2'"
-    ]
-  },
-  "this.x = this.x.bind(this)": {
-    "prefix": "bic",
-    "body": "this.$1 = this.$1.bind(this)"
-  },
+  "console.log();":               { "prefix": "con",  "body": "console.log($0);" },
+  "import x from y":              { "prefix": "imp",  "body": "import $0 from \"$1\";" },
+  "import { x } from y":          { "prefix": "imd",  "body": "import { $0 } from \"$1\";" },
+  "React: Import PropTypes":      { "prefix": "impt", "body": "import PropTypes from \"prop-types\";" },
+  "React Native: Import Element": { "prefix": "imrn", "body": "import { $0 } from \"react-native\";" },
 
+  /* React Component Constructors */
   "React: Class Component": {
     "prefix": "rcinit",
     "body": [
-      "import React, { Component } from 'react'",
+      "import React, { Component } from \"react\";",
       "",
       "class ${1:Class} extends Component {",
-      "\tconstructor (props) {",
-      "\t\tsuper(props)",
-      "\t\tthis.state = {}",
-      "\t}",
+      "\tstate = {};",
       "",
-      "\trender () {",
+      "\trender() {",
       "\t\treturn (",
       "\t\t\t$0",
-      "\t\t)",
+      "\t\t);",
       "\t}",
       "}",
       "",
-      "export default ${1:Class}"
+      "export default ${1:Class};"
+    ],
+  },
+  "React: Class Component (w/ Constructor)": {
+    "prefix": "rccinit",
+    "body": [
+      "import React, { Component } from \"react\";",
+      "",
+      "class ${1:Class} extends Component {",
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t$0",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:Class};"
     ],
   },
   "React: Functional Component": {
     "prefix": "rinit",
     "body": [
-      "import React from 'react'",
+      "import React from \"react\";",
       "",
       "const ${1:Name} = (props) => {",
       "\treturn (",
       "\t\t$0",
-      "\t)",
-      "}",
+      "\t);",
+      "};",
       "",
-      "export default ${1:Name}"
+      "export default ${1:Name};"
     ],
   },
-  "React: Import PropTypes": {
-    "prefix": "impt",
-    "body": "import PropTypes from 'prop-types'"
-  },
-  "React: Import Component": {
-    "prefix": "rc",
+
+
+  /* React Native */
+  "React Native: Define Stylesheet": {
+    "prefix": "rnss",
     "body": [
-      "import $1 from '../$2'"
-    ]
-  },
-  "React: Fragment Shorthand": {
-    "prefix": "rf",
-    "body": [
-      "<>",
+      "const styles = StyleSheet.create({",
       "\t$0",
-      "</>",
+      "});"
     ]
   }
 }

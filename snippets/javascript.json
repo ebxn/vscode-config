@@ -1,35 +1,10 @@
 {
-  "console.log()": {
-    "prefix": "con",
-    "body": [
-      "console.log($1)"
-    ]
-  },
-  "import x from 'y'": {
-    "prefix": "imp",
-    "body": [
-      "import $1 from '$2'"
-    ]
-  },
-  "import { x } from 'y'": {
-    "prefix": "imd",
-    "body": [
-      "import { $1 } from '$2'"
-    ]
-  },
+  "console.log();":          { "prefix": "con", "body": "console.log($0);" },
+  "import x from y":         { "prefix": "imp", "body": "import $0 from \"$1\";" },
+  "import { x } from y":     { "prefix": "imd", "body": "import { $0 } from \"$1\";" },
+  "Vue: Import Component":   { "prefix": "vc",  "body": "import $1 from \"@/components/$2.vue\";" },
+  "Vue: Import Vuex Helper": { "prefix": "vx",  "body": "import { $0 } from \"vuex\";" },
 
-  "Vue: Import Component": {
-    "prefix": "vc",
-    "body": [
-      "import $1 from '@/components/$2.vue'"
-    ]
-  },
-  "Vue: Import Vuex Helper": {
-    "prefix": "vx",
-    "body": [
-      "import { $1 } from 'vuex'"
-    ]
-  },
   "Vue: Data": {
     "prefix": "vd",
     "body": [
