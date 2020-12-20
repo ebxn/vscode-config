@@ -117,8 +117,8 @@
   /* typography */
   "editor.fontFamily": "Fira Code Medium",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "editor.lineHeight": 40,
+  "editor.fontSize": 17, // 16
+  "editor.lineHeight": 41, // 40
   "editor.suggestFontSize": 16,
   "editor.suggestLineHeight": 35,
   "terminal.integrated.fontSize": 15,

@@ -1,11 +1,9 @@
 {
-  "console.log();":               { "prefix": "con",  "body": "console.log($0);" },
-  "import x from y":              { "prefix": "imp",  "body": "import $0 from \"$1\";" },
-  "import { x } from y":          { "prefix": "imd",  "body": "import { $0 } from \"$1\";" },
-  "React: Import PropTypes":      { "prefix": "impt", "body": "import PropTypes from \"prop-types\";" },
-  "React Native: Import Element": { "prefix": "imrn", "body": "import { $0 } from \"react-native\";" },
+  "console.log();": {
+    "prefix": "con",
+    "body": "console.log($0);"
+  },
 
-  /* React Component Constructors */
   "React: Class Component": {
     "prefix": "rcinit",
     "body": [
@@ -24,6 +22,7 @@
       "export default ${1:Class};"
     ],
   },
+
   "React: Class Component (w/ Constructor)": {
     "prefix": "rccinit",
     "body": [
@@ -45,6 +44,7 @@
       "export default ${1:Class};"
     ],
   },
+
   "React: Functional Component": {
     "prefix": "rinit",
     "body": [
@@ -60,10 +60,18 @@
     ],
   },
 
+  "React: Import PropTypes": {
+    "prefix": "impt",
+    "body": "import PropTypes from \"prop-types\";"
+  },
 
-  /* React Native */
-  "React Native: Define Stylesheet": {
-    "prefix": "rnss",
+  "React Native Import": {
+    "prefix": "imrn",
+    "body": "import { $0 } from \"react-native\";"
+  },
+
+  "React Native: Create Stylesheet": {
+    "prefix": "ssc",
     "body": [
       "const styles = StyleSheet.create({",
       "\t$0",
