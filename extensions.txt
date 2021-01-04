@@ -11,3 +11,4 @@ Prettier - Code Formatter - Prettier
 Tailwind CSS IntelliSense - Brad Cornes
 Toggle                    - Peng Lv
 Vetur                     - Pine Wu
+vscode-styled-components  - Julien Poissonier
