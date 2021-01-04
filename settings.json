@@ -11,7 +11,7 @@
   "editor.insertSpaces": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -21,45 +21,8 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "javascript.format.insertSpaceAfterConstructor": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "javascript.format.semicolons": "remove",
-  "javascript.preferences.importModuleSpecifierEnding": "minimal",
-  "javascript.preferences.quoteStyle": "single",
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "window.newWindowDimensions": "inherit",
-  "window.nativeFullScreen": false,
-  "window.nativeTabs": true,
   "workbench.editor.enablePreview": false,
-
-  /* tab sizes */
-  "[html]": {
-    "editor.tabSize": 2
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[json]": {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false
-  },
-  "[css]": {
-    "editor.tabSize": 2
-  },
-  "[scss]": {
-    "editor.tabSize": 2
-  },
-  "[vue]": {
-    "editor.tabSize": 2
-  },
-  "[vue-html]": {
-    "editor.tabSize": 2
-  },
 
   /* hide everything */
   "editor.minimap.enabled": false,
@@ -69,16 +32,6 @@
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
-
-  /* find */
-  "search.useIgnoreFiles": false,
-  "search.exclude": {
-    // hide everything in /public except 'index' files
-    "**/public/{[^i],?[^n]}*": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/build": true
-  },
 
   /* silence the noise */
   "breadcrumbs.enabled": false,
@@ -103,17 +56,19 @@
   "git.decorations.enabled": false,
   "problems.decorations.enabled": false,
   "scm.diffDecorations": "none",
-  "window.zoomLevel": 0,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
 
+  /* language settings */
+  "[json]": { "editor.formatOnSave": false },
+
   /* typography */
-    // "editor.fontFamily": "Operator Mono Lig Medium",
+  // "editor.fontFamily": "Operator Mono Lig Medium",
   "editor.fontFamily": "Fira Code Medium",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17, // 16
-  "editor.lineHeight": 42, // 40
+  "editor.fontSize": 17, // default: 16
+  "editor.lineHeight": 42, // default: 40
   "editor.suggestFontSize": 16,
   "editor.suggestLineHeight": 35,
   "terminal.integrated.fontSize": 15,
@@ -121,7 +76,6 @@
 
   /* theme */
   "editor.cursorBlinking": "phase",
-  //   "editor.cursorSmoothCaretAnimation": true,
   "glassit-linux.opacity": 98,
   "helium-icon-theme.folders.theme": "classic",
   "helium-icon-theme.saturation": 0.9,
@@ -130,7 +84,7 @@
 
   /* emmet */
   "emmet.includeLanguages": { "vue-html": "html" },
-  //   "emmet.excludeLanguages": ["jsx"], // hides React Web suggestions
+  "emmet.excludeLanguages": ["jsx"], // hides React Web suggestions
   "emmet.triggerExpansionOnTab": true,
 
   /* eslint */
@@ -161,6 +115,5 @@
     "page-query": "graphql",
     "static-query": "graphql"
   },
-"vetur.ignoreProjectWarning": true,
-"git.enableSmartCommit": true
+  "vetur.ignoreProjectWarning": true
 }
