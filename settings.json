@@ -66,24 +66,18 @@
   "explorer.confirmDelete": false,
   "window.menuBarVisibility": "hidden",
   "workbench.activityBar.visible": false,
-  "workbench.editor.showTabs": true, // toggle
+  "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
 
   /* find */
   "search.useIgnoreFiles": false,
   "search.exclude": {
-    // hide everythng in /vendor, except 'laravel' and 'livewire'
-    "**/vendor/{[^l],?[^ai]}*": true,
     // hide everything in /public except 'index' files
     "**/public/{[^i],?[^n]}*": true,
     "**/node_modules": true,
     "**/dist": true,
-    "**/_ide_helper.php": true,
-    "**/composer.lock": true,
-    "**/package-lock.json": true,
-    "storage": true,
-    ".phpunit.result.cache": true
+    "**/build": true
   },
 
   /* silence the noise */
@@ -115,18 +109,19 @@
   "workbench.startupEditor": "none",
 
   /* typography */
+    // "editor.fontFamily": "Operator Mono Lig Medium",
   "editor.fontFamily": "Fira Code Medium",
   "editor.fontLigatures": true,
   "editor.fontSize": 17, // 16
-  "editor.lineHeight": 41, // 40
+  "editor.lineHeight": 42, // 40
   "editor.suggestFontSize": 16,
   "editor.suggestLineHeight": 35,
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.lineHeight": 1.5,
 
   /* theme */
-  "editor.cursorBlinking": "smooth",
-  // "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "phase",
+  //   "editor.cursorSmoothCaretAnimation": true,
   "glassit-linux.opacity": 98,
   "helium-icon-theme.folders.theme": "classic",
   "helium-icon-theme.saturation": 0.9,
@@ -135,7 +130,7 @@
 
   /* emmet */
   "emmet.includeLanguages": { "vue-html": "html" },
-  "emmet.excludeLanguages": ["jsx"], // hides React Web suggestions
+  //   "emmet.excludeLanguages": ["jsx"], // hides React Web suggestions
   "emmet.triggerExpansionOnTab": true,
 
   /* eslint */
@@ -147,7 +142,9 @@
 
   /* prettier */
   "editor.formatOnSave": true,
-  "prettier.trailingComma": "none",
+  // "prettier.singleQuote": true,
+  // "prettier.semi": false,
+  // "prettier.trailingComma": "none",
 
   /* tailwind */
   "tailwindCSS.includeLanguages": {
@@ -164,5 +161,6 @@
     "page-query": "graphql",
     "static-query": "graphql"
   },
-  "vetur.ignoreProjectWarning": true
+"vetur.ignoreProjectWarning": true,
+"git.enableSmartCommit": true
 }
