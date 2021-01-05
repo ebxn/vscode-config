@@ -1,81 +1,100 @@
 {
-  "console.log();": {
-    "prefix": "con",
-    "body": "console.log($0);"
+  "console.log()": {
+    "prefix": "clog",
+    "body": "console.log($0)"
   },
 
   "React: Class Component": {
     "prefix": "rcinit",
     "body": [
-      "import React, { Component } from \"react\";",
+      "import React, { Component } from 'react'",
       "",
       "class ${1:Class} extends Component {",
-      "\tstate = {};",
+      "\tstate = {}",
       "",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t$0",
-      "\t\t);",
+      "\t\t)",
       "\t}",
       "}",
       "",
-      "export default ${1:Class};"
+      "export default ${1:Class}"
     ],
   },
 
   "React: Class Component (w/ Constructor)": {
     "prefix": "rccinit",
     "body": [
-      "import React, { Component } from \"react\";",
+      "import React, { Component } from 'react'",
       "",
       "class ${1:Class} extends Component {",
       "\tconstructor(props) {",
-      "\t\tsuper(props);",
-      "\t\tthis.state = {};",
+      "\t\tsuper(props)",
+      "\t\tthis.state = {}",
       "\t}",
       "",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t$0",
-      "\t\t);",
+      "\t\t)",
       "\t}",
       "}",
       "",
-      "export default ${1:Class};"
+      "export default ${1:Class}"
     ],
   },
 
   "React: Functional Component": {
     "prefix": "rinit",
     "body": [
-      "import React from \"react\";",
+      "import React from 'react'",
       "",
       "const ${1:Name} = (props) => {",
       "\treturn (",
       "\t\t$0",
-      "\t);",
-      "};",
+      "\t)",
+      "}",
       "",
-      "export default ${1:Name};"
+      "export default ${1:Name}"
     ],
   },
 
   "React: Import PropTypes": {
     "prefix": "impt",
-    "body": "import PropTypes from \"prop-types\";"
+    "body": "import PropTypes from 'prop-types'"
   },
 
-  "React Native Import": {
+  "Native: Import": {
     "prefix": "imrn",
-    "body": "import { $0 } from \"react-native\";"
+    "body": "import { $0 } from 'react-native'"
   },
 
-  "React Native: Create Stylesheet": {
-    "prefix": "ssc",
+  "Native: StyleSheet": {
+    "prefix": "styles",
     "body": [
       "const styles = StyleSheet.create({",
       "\t$0",
-      "});"
+      "})"
     ]
   }
+
+  /* "React: Import Styled Components": {
+    "prefix": "imsc",
+    "body": "import styled from 'styled-components'"
+  },
+
+  "React: Styled Component": {
+    "prefix": "sc",
+    "body": [
+      "styled.$1`",
+      "\t$0",
+      "`"
+    ]
+  },
+
+  "React: Import Styles": {
+    "prefix": "imscs",
+    "body": "import * as S from './styles'"
+  } */
 }

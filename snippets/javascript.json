@@ -1,17 +1,17 @@
 {
-  "console.log();": {
-    "prefix": "con",
-    "body": "console.log($0);"
+  "console.log()": {
+    "prefix": "clog",
+    "body": "console.log($0)"
   },
 
   "Vue: Import Component": {
     "prefix": "vc",
-    "body": "import $1 from \"@/components/$2.vue\";"
+    "body": "import $1 from '@/components/$2.vue'"
   },
 
   "Vue: Import Vuex Helper": {
     "prefix": "vx",
-    "body": "import { $0 } from \"vuex\";"
+    "body": "import { $0 } from 'vuex'"
   },
 
   "Vue: Component Data": {
