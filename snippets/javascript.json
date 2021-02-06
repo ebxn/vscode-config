@@ -15,13 +15,11 @@
   },
 
   "Vue: Component Data": {
-    "prefix": "vd",
+    "prefix": "data",
     "body": [
-      "data: function () {",
-      "\treturn {",
-      "\t\t$0",
-      "\t}",
-      "},"
+      "data: () => ({",
+      "\t$0",
+      "}),"
     ]
   },
 

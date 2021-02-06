@@ -15,7 +15,7 @@
   "editor.wordWrap": "on",
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "*.js": "javascriptreact" // uncomment if using React
+    // "*.js": "javascriptreact" // uncomment if using React
   },
   "files.autoSave": "onWindowChange",
   "files.insertFinalNewline": true,
@@ -67,10 +67,10 @@
   // "editor.fontFamily": "Operator Mono Lig Medium",
   "editor.fontFamily": "Fira Code Medium",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17, // default: 16
-  "editor.lineHeight": 42, // default: 40
-  "editor.suggestFontSize": 16,
-  "editor.suggestLineHeight": 35,
+  "editor.fontSize": 17, // old: 16
+  "editor.lineHeight": 45,
+  "editor.suggestFontSize": 15,
+  "editor.suggestLineHeight": 28,
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.lineHeight": 1.5,
 
@@ -81,10 +81,11 @@
   "helium-icon-theme.saturation": 0.9,
   "workbench.colorTheme": "Palenight (Mild Contrast)",
   "workbench.iconTheme": "helium-icon-theme",
+  "window.zoomLevel": 0,
 
   /* emmet */
+  // "emmet.excludeLanguages": ["jsx"], // hides React Web suggestions
   "emmet.includeLanguages": { "vue-html": "html" },
-  "emmet.excludeLanguages": ["jsx"], // hides React Web suggestions
   "emmet.triggerExpansionOnTab": true,
 
   /* eslint */
@@ -96,14 +97,16 @@
 
   /* prettier */
   "editor.formatOnSave": true,
-  // "prettier.singleQuote": true,
-  // "prettier.semi": false,
-  // "prettier.trailingComma": "none",
+  "prettier.requireConfig": true,
 
   /* tailwind */
   "tailwindCSS.includeLanguages": {
     "vue-html": "html"
   },
+
+  /* typescript validations */
+  // "javascript.validate.enable": false,
+  // "typescript.validate.enable": false,
 
   /* vetur */
   "vetur.completion.scaffoldSnippetSources": {

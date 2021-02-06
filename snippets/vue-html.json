@@ -1,8 +1,40 @@
 {
-  "Vue Router View": {
+  "Vue: Router View": {
     "prefix": "vrv",
     "body": [
       "<RouterView :key=\"\\$route.fullPath\" />"
+    ]
+  },
+
+  "Vue: Transition Component": {
+    "prefix": "vtrans",
+    "body": [
+      "<Transition",
+      "\tenter-active-class=\"\"",
+      "\tenter-class=\"\"",
+      "\tenter-to-class=\"\"",
+      "\tleave-active-class=\"\"",
+      "\tleave-class=\"\"",
+      "\tleave-to-class=\"\"",
+      ">",
+      "\t$0",
+      "</Transition>"
+    ]
+  },
+
+  "Vue 3: Transition Component": {
+    "prefix": "vtrans3",
+    "body": [
+      "<Transition",
+      "\tenter-active-class=\"\"",
+      "\tenter-from-class=\"\"",
+      "\tenter-to-class=\"\"",
+      "\tleave-active-class=\"\"",
+      "\tleave-from-class=\"\"",
+      "\tleave-to-class=\"\"",
+      ">",
+      "\t$0",
+      "</Transition>"
     ]
   }
 }
