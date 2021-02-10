@@ -6,9 +6,9 @@ GlassIt Linux             - nowsci
 GraphQL for VSCode        - Kumar Harsh
 Helium Icon Theme         - Helgard Richard Ferreira
 Laravel Blade Spacer      - Austen Cameron
+Live Share                - Microsoft
 Palenight Theme           - Olaolu Olawuyi
 Prettier - Code Formatter - Prettier
 Tailwind CSS IntelliSense - Brad Cornes
 Toggle                    - Peng Lv
 Vetur                     - Pine Wu
-vscode-styled-components  - Julien Poissonier
