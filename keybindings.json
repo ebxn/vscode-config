@@ -200,7 +200,7 @@
     "args": {
       "id": "fontSize",
       "value": [
-        { "editor.fontSize": 17, "editor.lineHeight": 45 },
+        { "editor.fontSize": 16, "editor.lineHeight": 42 },
         { "editor.fontSize": 13, "editor.lineHeight": 0 }
       ]
     }

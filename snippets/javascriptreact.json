@@ -65,20 +65,6 @@
     "body": "import PropTypes from 'prop-types'"
   },
 
-  "Native: Import": {
-    "prefix": "imrn",
-    "body": "import { $0 } from 'react-native'"
-  },
-
-  "Native: StyleSheet": {
-    "prefix": "styles",
-    "body": [
-      "const styles = StyleSheet.create({",
-      "\t$0",
-      "})"
-    ]
-  }
-
   /* "React: Import Styled Components": {
     "prefix": "imsc",
     "body": "import styled from 'styled-components'"

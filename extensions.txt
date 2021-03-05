@@ -1,3 +1,4 @@
+Auto Close Tag            - Jun Han
 Color Highlight           - Sergil Naumov
 Disable Ligatures         - CoenraadS
 Duplicate action          - mrmlnc
@@ -7,6 +8,7 @@ GraphQL for VSCode        - Kumar Harsh
 Helium Icon Theme         - Helgard Richard Ferreira
 Laravel Blade Spacer      - Austen Cameron
 Live Share                - Microsoft
+npm Intellisense          - Christian Kohler
 Palenight Theme           - Olaolu Olawuyi
 Prettier - Code Formatter - Prettier
 Tailwind CSS IntelliSense - Brad Cornes

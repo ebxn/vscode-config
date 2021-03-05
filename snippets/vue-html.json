@@ -9,7 +9,7 @@
   "Vue: Transition Component": {
     "prefix": "vtrans",
     "body": [
-      "<Transition",
+      "<transition",
       "\tenter-active-class=\"\"",
       "\tenter-class=\"\"",
       "\tenter-to-class=\"\"",
@@ -18,14 +18,14 @@
       "\tleave-to-class=\"\"",
       ">",
       "\t$0",
-      "</Transition>"
+      "</transition>"
     ]
   },
 
   "Vue 3: Transition Component": {
     "prefix": "vtrans3",
     "body": [
-      "<Transition",
+      "<transition",
       "\tenter-active-class=\"\"",
       "\tenter-from-class=\"\"",
       "\tenter-to-class=\"\"",
@@ -34,7 +34,7 @@
       "\tleave-to-class=\"\"",
       ">",
       "\t$0",
-      "</Transition>"
+      "</transition>"
     ]
   }
 }
