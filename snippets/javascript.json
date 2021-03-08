@@ -17,9 +17,11 @@
   "Vue: Component Data": {
     "prefix": "data",
     "body": [
-      "data: () => ({",
-      "\t$0",
-      "}),"
+      "data() {",
+      "\treturn {",
+      "\t\t$0",
+      "\t}",
+      "},"
     ]
   },
 
@@ -52,6 +54,17 @@
       "\tmutations,",
       "\tgetters",
       "}"
+    ]
+  },
+
+  "Nuxt: Component Metadata": {
+    "prefix": "head",
+    "body": [
+      "head() {",
+      "\treturn {",
+      "\t\t$0",
+      "\t}",
+      "},"
     ]
   }
 }

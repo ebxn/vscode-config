@@ -79,10 +79,10 @@
 
   /* theme */
   "editor.cursorBlinking": "phase",
-  "glassit-linux.opacity": 98,
+  "glassit-linux.opacity": 96,
   "helium-icon-theme.folders.theme": "classic",
   "helium-icon-theme.saturation": 0.9,
-  "workbench.colorTheme": "Palenight Theme",
+  "workbench.colorTheme": "Palenight (Mild Contrast)",
   "workbench.iconTheme": "helium-icon-theme",
   "window.zoomLevel": 0,
 
