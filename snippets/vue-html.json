@@ -6,8 +6,8 @@
     ]
   },
 
-  "Vue: Transition Component": {
-    "prefix": "vtrans",
+  "Vue 2: Transition Component": {
+    "prefix": "vtr2",
     "body": [
       "<transition",
       "\tenter-active-class=\"\"",
@@ -23,7 +23,7 @@
   },
 
   "Vue 3: Transition Component": {
-    "prefix": "vtrans3",
+    "prefix": "vtr",
     "body": [
       "<transition",
       "\tenter-active-class=\"\"",

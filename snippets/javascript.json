@@ -65,16 +65,5 @@
       "\tgetters",
       "}"
     ]
-  },
-
-  "Nuxt: Component Metadata": {
-    "prefix": "head",
-    "body": [
-      "head() {",
-      "\treturn {",
-      "\t\t$0",
-      "\t}",
-      "},"
-    ]
   }
 }

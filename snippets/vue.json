@@ -15,7 +15,7 @@
   },
 
   "Vue: SFC (SCSS)": {
-    "prefix": "vinitscss",
+    "prefix": "vinits",
     "body": [
       "<template>",
       "\t$0",
@@ -58,9 +58,9 @@
       "\t$0",
       "</style>"
     ]
-  },
+  }
 
-  "Vue: GraphQL Page Query": {
+  /* "Vue: GraphQL Page Query": {
     "prefix": "pquery",
     "body": [
       "<page-query>",
@@ -68,6 +68,7 @@
       "</page-query>"
     ]
   },
+
   "Vue: GraphQL Static Query": {
     "prefix": "squery",
     "body": [
@@ -75,5 +76,5 @@
       "\t$0",
       "</static-query>"
     ]
-  }
+  } */
 }

@@ -1,4 +1,4 @@
-{
+  {
   "console.log()": {
     "prefix": "clog",
     "body": "console.log($0)"
@@ -63,7 +63,7 @@
   "React: Import PropTypes": {
     "prefix": "impt",
     "body": "import PropTypes from 'prop-types'"
-  },
+  }
 
   /* "React: Import Styled Components": {
     "prefix": "imsc",
