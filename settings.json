@@ -15,7 +15,7 @@
   "editor.wordWrap": "on",
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "*.js": "javascriptreact", // uncomment if using react
+    // "*.js": "javascriptreact", // uncomment if using react
   },
   "files.autoSave": "onWindowChange",
   "files.insertFinalNewline": true,
@@ -84,7 +84,6 @@
   "helium-icon-theme.saturation": 0.9,
   "workbench.colorTheme": "Palenight (Mild Contrast)",
   "workbench.iconTheme": "helium-icon-theme",
-  "window.zoomLevel": 0,
 
   /* auto close tag */
   "auto-close-tag.SublimeText3Mode": true,
