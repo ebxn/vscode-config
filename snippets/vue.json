@@ -1,6 +1,7 @@
 {
-  "Vue: SFC": {
-    "prefix": "vinit",
+  /* vue 2 */
+  "Vue 2: SFC": {
+    "prefix": "vinit2",
     "body": [
       "<template>",
       "\t$0",
@@ -14,8 +15,8 @@
     ]
   },
 
-  "Vue: SFC (SCSS)": {
-    "prefix": "vinits",
+  "Vue 2: SFC (SCSS)": {
+    "prefix": "vinits2",
     "body": [
       "<template>",
       "\t$0",
@@ -28,7 +29,7 @@
       "</script>",
       "",
       "<style lang=\"scss\" scoped>",
-      "\t",
+      "",
       "</style>"
     ]
   },
@@ -46,7 +47,16 @@
     "prefix": "script",
     "body": [
       "<script>",
-      "\t$0",
+      "$0",
+      "</script>"
+    ]
+  },
+
+  "Vue: <script setup />": {
+    "prefix": "script:setup",
+    "body": [
+      "<script setup>",
+      "$0",
       "</script>"
     ]
   },
@@ -55,26 +65,39 @@
     "prefix": "style",
     "body": [
       "<style$1 scoped>",
-      "\t$0",
+      "$0",
       "</style>"
-    ]
-  }
-
-  /* "Vue: GraphQL Page Query": {
-    "prefix": "pquery",
-    "body": [
-      "<page-query>",
-      "\t$0",
-      "</page-query>"
     ]
   },
 
-  "Vue: GraphQL Static Query": {
-    "prefix": "squery",
+  /* vue 3 */
+  "Vue 3: SFC": {
+    "prefix": "vinit",
     "body": [
-      "<static-query>",
+      "<template>",
       "\t$0",
-      "</static-query>"
+      "</template>",
+      "",
+      "<script setup>",
+      "//",
+      "</script>"
     ]
-  } */
+  },
+
+  "Vue 3: SFC (SCSS)": {
+    "prefix": "vinits",
+    "body": [
+      "<template>",
+      "\t$0",
+      "</template>",
+      "",
+      "<script setup>",
+      "import {} from 'vue'",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ]
+  }
 }

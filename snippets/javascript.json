@@ -14,17 +14,45 @@
     "body": "document.querySelectorAll($1)"
   },
 
+  "Tailwind config": {
+    "prefix": "twind",
+    "body":[
+      "// const dT = require('tailwindcss/defaultTheme')",
+      "// const colors = require('tailwindcss/colors')",
+      "",
+      "module.exports = {",
+      "\tpurge: ['./src/**/*.{html,js,vue}'],",
+      "\tmode: 'jit',",
+      "\tdarkMode: false, // or 'media' or 'class'",
+      "\ttheme: {",
+      "\t\textend: {}",
+      "\t}",
+      "}",
+      ""
+    ]
+  },
+
   "Vue: Import Component": {
-    "prefix": "vc",
+    "prefix": "vcp",
     "body": "import $1 from '@/components/$2.vue'"
+  },
+
+  "Vue: Import Composable": {
+    "prefix": "vcs",
+    "body": "import $1 from '@/composables/$1'"
+  },
+
+  "Vue: Import Vue": {
+    "prefix": "vv",
+    "body": "import { $1 } from 'vue'"
   },
 
   "Vue: Import Vuex Helper": {
     "prefix": "vx",
-    "body": "import { $0 } from 'vuex'"
+    "body": "import { $1 } from 'vuex'"
   },
 
-  "Vue: Component Data": {
+  "Vue 2: Component Data": {
     "prefix": "data",
     "body": [
       "data() {",

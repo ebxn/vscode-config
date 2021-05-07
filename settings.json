@@ -31,7 +31,6 @@
   "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": true,
   "workbench.sideBar.location": "right",
-  "workbench.statusBar.visible": true,
 
   /* silence the noise */
   "breadcrumbs.enabled": false,
@@ -62,16 +61,18 @@
 
   /* language settings */
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
     "editor.formatOnSave": true
   },
+
 
   /* typography */
   // "editor.fontFamily": "Operator Mono Lig Medium",
   "editor.fontFamily": "Fira Code Medium",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "editor.lineHeight": 42,
+  "editor.fontSize": 16, // default: 16
+  "editor.lineHeight": 42, // default: 42
   "editor.suggestFontSize": 15,
   "editor.suggestLineHeight": 28,
   "terminal.integrated.fontSize": 15,
@@ -82,6 +83,9 @@
   "glassit-linux.opacity": 96,
   "helium-icon-theme.folders.theme": "classic",
   "helium-icon-theme.saturation": 0.9,
+  "vscode-pets.position": "explorer",
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.theme": "forest",
   "workbench.colorTheme": "Palenight (Mild Contrast)",
   "workbench.iconTheme": "helium-icon-theme",
 
@@ -94,7 +98,7 @@
   },
   "emmet.triggerExpansionOnTab": true,
 
-  /* formatters */
+  /* formatters/linters */
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -118,5 +122,4 @@
     "static-query": "graphql"
   },
   "vetur.ignoreProjectWarning": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
 }
