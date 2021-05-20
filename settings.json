@@ -69,6 +69,7 @@
 
   /* typography */
   // "editor.fontFamily": "Operator Mono Lig Medium",
+  // "editor.fontFamily": "Comic Sans MS",
   "editor.fontFamily": "Fira Code Medium",
   "editor.fontLigatures": true,
   "editor.fontSize": 16, // default: 16
@@ -86,7 +87,7 @@
   "vscode-pets.position": "explorer",
   "vscode-pets.petSize": "medium",
   "vscode-pets.theme": "forest",
-  "workbench.colorTheme": "Palenight (Mild Contrast)",
+  "workbench.colorTheme": "Palenight Theme",
   "workbench.iconTheme": "helium-icon-theme",
 
   /* auto close tag */
@@ -122,4 +123,5 @@
     "static-query": "graphql"
   },
   "vetur.ignoreProjectWarning": true,
+  "vetur.validation.template": false
 }

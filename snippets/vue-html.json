@@ -2,7 +2,7 @@
   "Vue: Router View": {
     "prefix": "vrv",
     "body": [
-      "<RouterView :key=\"\\$route.fullPath\" />"
+      "<router-view :key=\"\\$route.fullPath\" />"
     ]
   },
 

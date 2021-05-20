@@ -25,6 +25,7 @@
       "\tmode: 'jit',",
       "\tdarkMode: false, // or 'media' or 'class'",
       "\ttheme: {",
+      "\t\tcontainer: {},",
       "\t\textend: {}",
       "\t}",
       "}",
