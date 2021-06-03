@@ -14,6 +14,63 @@
     "body": "document.querySelectorAll($1)"
   },
 
+  "createElement": {
+    "prefix": "dce",
+    "body": "document.createElement($1)"
+  },
+
+  "Vue: Import Vue": {
+    "prefix": "vv",
+    "body": "import { $1 } from 'vue'"
+  },
+
+  // "Vue: Import Component": {
+  //   "prefix": "vcmp",
+  //   "body": "import $1 from '@/components/$2.vue'"
+  // },
+
+  "Vue: Import Composable": {
+    "prefix": "vcp",
+    "body": "import $1 from '@/composables/$1'"
+  },
+
+  // "Vue: Import Vuex Helper": {
+  //   "prefix": "vx",
+  //   "body": "import { $1 } from 'vuex'"
+  // },
+
+  // "Vue: Define Route": {
+  //   "prefix": "vr",
+  //   "body": [
+  //     "{",
+  //     "\tpath: '/$1',",
+  //     "\tname: '$2',",
+  //     "\tcomponent: () => import(/* webpackChunkName: \"$1\" */ '@/views/$2.vue')",
+  //     "},"
+  //   ]
+  // },
+
+  // "Vue: VueX Boilerplate": {
+  //   "prefix": "vxbp",
+  //   "body": [
+  //     "const state = {}",
+  //     "",
+  //     "const mutations = {}",
+  //     "",
+  //     "const actions = {}",
+  //     "",
+  //     "const getters = {}",
+  //     "",
+  //     "export default {",
+  //     "\tnamespaced: true,",
+  //     "\tstate,",
+  //     "\tactions,",
+  //     "\tmutations,",
+  //     "\tgetters",
+  //     "}"
+  //   ]
+  // }
+
   "Tailwind config": {
     "prefix": "twind",
     "body":[
@@ -21,7 +78,7 @@
       "// const colors = require('tailwindcss/colors')",
       "",
       "module.exports = {",
-      "\tpurge: ['./src/**/*.{html,js,vue}'],",
+      "\tpurge: ['./src/**/*.{html,js,ts,vue}'],",
       "\tmode: 'jit',",
       "\tdarkMode: false, // or 'media' or 'class'",
       "\ttheme: {",
@@ -30,69 +87,6 @@
       "\t}",
       "}",
       ""
-    ]
-  },
-
-  "Vue: Import Component": {
-    "prefix": "vcp",
-    "body": "import $1 from '@/components/$2.vue'"
-  },
-
-  "Vue: Import Composable": {
-    "prefix": "vcs",
-    "body": "import $1 from '@/composables/$1'"
-  },
-
-  "Vue: Import Vue": {
-    "prefix": "vv",
-    "body": "import { $1 } from 'vue'"
-  },
-
-  "Vue: Import Vuex Helper": {
-    "prefix": "vx",
-    "body": "import { $1 } from 'vuex'"
-  },
-
-  "Vue 2: Component Data": {
-    "prefix": "data",
-    "body": [
-      "data() {",
-      "\treturn {",
-      "\t\t$0",
-      "\t}",
-      "},"
-    ]
-  },
-
-  "Vue: Define Route": {
-    "prefix": "vr",
-    "body": [
-      "{",
-      "\tpath: '/$1',",
-      "\tname: '$2',",
-      "\tcomponent: () => import(/* webpackChunkName: \"$1\" */ '@/views/$2.vue')",
-      "},"
-    ]
-  },
-
-  "Vue: VueX Boilerplate": {
-    "prefix": "vxbp",
-    "body": [
-      "const state = {}",
-      "",
-      "const mutations = {}",
-      "",
-      "const actions = {}",
-      "",
-      "const getters = {}",
-      "",
-      "export default {",
-      "\tnamespaced: true,",
-      "\tstate,",
-      "\tactions,",
-      "\tmutations,",
-      "\tgetters",
-      "}"
     ]
   }
 }

@@ -87,7 +87,7 @@
   "vscode-pets.position": "explorer",
   "vscode-pets.petSize": "medium",
   "vscode-pets.theme": "forest",
-  "workbench.colorTheme": "Palenight Theme",
+  "workbench.colorTheme": "Palenight (Mild Contrast)",
   "workbench.iconTheme": "helium-icon-theme",
 
   /* auto close tag */
@@ -123,5 +123,12 @@
     "static-query": "graphql"
   },
   "vetur.ignoreProjectWarning": true,
-  "vetur.validation.template": false
+  "vetur.validation.template": false,
+  "vetur.validation.script": false,
+
+  /* volar */
+  "volar.codeLens.references": false,
+  "volar.codeLens.scriptSetupTools": false,
+  "volar.codeLens.pugTools": false,
+  "volar.tsPluginStatus": false
 }

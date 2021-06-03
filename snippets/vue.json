@@ -1,40 +1,5 @@
 {
-  /* vue 2 */
-  "Vue 2: SFC": {
-    "prefix": "vinit2",
-    "body": [
-      "<template>",
-      "\t$0",
-      "</template>",
-      "",
-      "<script>",
-      "export default {",
-      "\tname: '$1'",
-      "}",
-      "</script>"
-    ]
-  },
-
-  "Vue 2: SFC (SCSS)": {
-    "prefix": "vinits2",
-    "body": [
-      "<template>",
-      "\t$0",
-      "</template>",
-      "",
-      "<script>",
-      "export default {",
-      "\tname: '$1'",
-      "}",
-      "</script>",
-      "",
-      "<style lang=\"scss\" scoped>",
-      "",
-      "</style>"
-    ]
-  },
-
-  "Vue: <template />": {
+  "<template />": {
     "prefix": "template",
     "body": [
       "<template>",
@@ -43,7 +8,7 @@
     ]
   },
 
-  "Vue: <script />": {
+  "<script />": {
     "prefix": "script",
     "body": [
       "<script>",
@@ -52,7 +17,7 @@
     ]
   },
 
-  "Vue: <script setup />": {
+  "<script setup />": {
     "prefix": "script:setup",
     "body": [
       "<script setup>",
@@ -61,7 +26,7 @@
     ]
   },
 
-  "Vue: <style />": {
+  "<style />": {
     "prefix": "style",
     "body": [
       "<style$1 scoped>",
@@ -71,8 +36,8 @@
   },
 
   /* vue 3 */
-  "Vue 3: SFC": {
-    "prefix": "vinit",
+  "SFC": {
+    "prefix": "vc",
     "body": [
       "<template>",
       "\t$0",
@@ -84,14 +49,44 @@
     ]
   },
 
-  "Vue 3: SFC (SCSS)": {
-    "prefix": "vinits",
+  "SFC (SCSS)": {
+    "prefix": "vc:scss",
     "body": [
       "<template>",
       "\t$0",
       "</template>",
       "",
       "<script setup>",
+      "//",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ]
+  },
+
+  "TypeScript SFC": {
+    "prefix": "vct",
+    "body": [
+      "<template>",
+      "\t$0",
+      "</template>",
+      "",
+      "<script lang=\"ts\" setup>",
+      "//",
+      "</script>"
+    ]
+  },
+
+  "TypeScript SFC (SCSS)": {
+    "prefix": "vct:scss",
+    "body": [
+      "<template>",
+      "\t$0",
+      "</template>",
+      "",
+      "<script lang=\"ts\" setup>",
       "//",
       "</script>",
       "",

@@ -12,5 +12,25 @@
   "querySelectorAll": {
     "prefix": "dsa",
     "body": "document.querySelectorAll($1)"
+  },
+
+  "createElement": {
+    "prefix": "dce",
+    "body": "document.createElement($1)"
+  },
+
+  "Vue: Import Vue": {
+    "prefix": "vv",
+    "body": "import { $1 } from 'vue'"
+  },
+
+  // "Vue: Import Component": {
+  //   "prefix": "vcmp",
+  //   "body": "import $1 from '@/components/$2.vue'"
+  // },
+
+  "Vue: Import Composable": {
+    "prefix": "vcp",
+    "body": "import { $1 } from '@/composables/$1'"
   }
 }
