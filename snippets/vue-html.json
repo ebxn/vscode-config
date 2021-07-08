@@ -1,29 +1,13 @@
 {
-  "Vue: Router View": {
+  "Router View": {
     "prefix": "vrv",
     "body": [
       "<router-view :key=\"\\$route.fullPath\" />"
     ]
   },
 
-  "Vue 2: Transition Component": {
-    "prefix": "vtr2",
-    "body": [
-      "<transition",
-      "\tenter-active-class=\"\"",
-      "\tenter-class=\"\"",
-      "\tenter-to-class=\"\"",
-      "\tleave-active-class=\"\"",
-      "\tleave-class=\"\"",
-      "\tleave-to-class=\"\"",
-      ">",
-      "\t$0",
-      "</transition>"
-    ]
-  },
-
-  "Vue 3: Transition Component": {
-    "prefix": "vtr",
+  "Transition Component": {
+    "prefix": "vt",
     "body": [
       "<transition",
       "\tenter-active-class=\"\"",

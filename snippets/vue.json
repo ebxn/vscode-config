@@ -8,19 +8,10 @@
     ]
   },
 
-  "<script />": {
-    "prefix": "script",
-    "body": [
-      "<script>",
-      "$0",
-      "</script>"
-    ]
-  },
-
   "<script setup />": {
     "prefix": "script:setup",
     "body": [
-      "<script setup>",
+      "<script lang=\"ts\" setup>",
       "$0",
       "</script>"
     ]
@@ -35,39 +26,8 @@
     ]
   },
 
-  /* vue 3 */
-  "SFC": {
-    "prefix": "vc",
-    "body": [
-      "<template>",
-      "\t$0",
-      "</template>",
-      "",
-      "<script setup>",
-      "//",
-      "</script>"
-    ]
-  },
-
-  "SFC (SCSS)": {
-    "prefix": "vc:scss",
-    "body": [
-      "<template>",
-      "\t$0",
-      "</template>",
-      "",
-      "<script setup>",
-      "//",
-      "</script>",
-      "",
-      "<style lang=\"scss\" scoped>",
-      "",
-      "</style>"
-    ]
-  },
-
   "TypeScript SFC": {
-    "prefix": "vct",
+    "prefix": "vc",
     "body": [
       "<template>",
       "\t$0",
@@ -80,7 +40,7 @@
   },
 
   "TypeScript SFC (SCSS)": {
-    "prefix": "vct:scss",
+    "prefix": "vcs",
     "body": [
       "<template>",
       "\t$0",

@@ -21,19 +21,20 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "window.newWindowDimensions": "inherit",
   "workbench.editor.enablePreview": false,
-
-  /* hide everything */
   "editor.minimap.enabled": false,
   "explorer.confirmDelete": false,
-  "window.menuBarVisibility": "hidden",
   "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": true,
+  "workbench.editor.untitled.hint": "hidden",
   "workbench.sideBar.location": "right",
 
   /* silence the noise */
   "breadcrumbs.enabled": false,
+  "editor.codeLens": false,
   "editor.colorDecorators": true,
   "editor.glyphMargin": false,
   "editor.gotoLocation.multipleDeclarations": "goto",
@@ -55,6 +56,8 @@
   "git.decorations.enabled": false,
   "problems.decorations.enabled": false,
   "scm.diffDecorations": "none",
+  "terminal.integrated.tabs.enabled": false,
+  "window.menuBarVisibility": "toggle",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
@@ -62,9 +65,13 @@
   /* language settings */
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "[elm]": {
+    "editor.formatOnSave": true
+  },
   "[json]": {
     "editor.formatOnSave": true
   },
+  "html.autoClosingTags": false,
 
 
   /* typography */
@@ -84,14 +91,8 @@
   "glassit-linux.opacity": 96,
   "helium-icon-theme.folders.theme": "classic",
   "helium-icon-theme.saturation": 0.9,
-  "vscode-pets.position": "explorer",
-  "vscode-pets.petSize": "medium",
-  "vscode-pets.theme": "forest",
-  "workbench.colorTheme": "Palenight (Mild Contrast)",
+  "workbench.colorTheme": "Palenight Theme",
   "workbench.iconTheme": "helium-icon-theme",
-
-  /* auto close tag */
-  "auto-close-tag.SublimeText3Mode": true,
 
   /* emmet */
   "emmet.includeLanguages": {
@@ -125,10 +126,4 @@
   "vetur.ignoreProjectWarning": true,
   "vetur.validation.template": false,
   "vetur.validation.script": false,
-
-  /* volar */
-  "volar.codeLens.references": false,
-  "volar.codeLens.scriptSetupTools": false,
-  "volar.codeLens.pugTools": false,
-  "volar.tsPluginStatus": false
 }

@@ -1,7 +1,7 @@
 {
   "console.log()": {
-    "prefix": "con",
-    "body": "console.log($0)"
+    "prefix": "clog",
+    "body": "console.log($1)"
   },
 
   "querySelector": {
@@ -19,18 +19,18 @@
     "body": "document.createElement($1)"
   },
 
-  "Vue: Import Vue": {
+  "Vue: Import from Vue": {
     "prefix": "vv",
     "body": "import { $1 } from 'vue'"
   },
 
-  // "Vue: Import Component": {
-  //   "prefix": "vcmp",
-  //   "body": "import $1 from '@/components/$2.vue'"
-  // },
+  "Vue: Import from VueUse": {
+    "prefix": "vu",
+    "body": "import { $1 } from '@vueuse/core'"
+  },
 
   "Vue: Import Composable": {
-    "prefix": "vcp",
-    "body": "import { $1 } from '@/composables/$1'"
+    "prefix": "vc",
+    "body": "import $1 from '@/composables/$1'"
   }
 }
